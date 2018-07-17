@@ -1,0 +1,8 @@
+<window id="winedit" title="Sửa" border="normal" width="40%"
+closable="true" apply="org.zkoss.bind.BindComposer"
+		viewModel="@id('vm')@init('vn.qti.zkdemo.ChucVuEditModel')">
+		
+    	Chức vụ: <textbox value="@bind(vm.selectChucVu.tenChucVu)"
+					hflex="1"  />
+    <button style="margin:5px;" label="Lưu" onClick="@command('save', cmp=winedit) @global-command('refresh')"/> 
+</window>

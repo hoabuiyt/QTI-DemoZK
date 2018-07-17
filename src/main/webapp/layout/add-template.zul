@@ -1,0 +1,5 @@
+<window id="winadd" title="Thêm m?i" border="normal" width="40%"
+closable="true" apply="org.zkoss.bind.BindComposer" viewModel="@id('vm')@init('vn.qti.zkdemo.ChucVuViewModel')">
+   	Ch?c v?: <textbox value="@save(vm.tenChucVu)" onOK="@command('addChucVu')" hflex="1"  />
+    <button style="margin:5px;" label="Luu" onClick="@command('addChucVu', cmp=winadd) @global-command('refresh')"/>
+</window>
